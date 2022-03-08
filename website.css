@@ -1,0 +1,144 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+header {
+	background-color: dimgray;
+	display: flex;
+	padding: 10px 0;
+}
+header ul {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+header a {
+	color: white;
+}
+#logo {
+	margin: auto;
+	font-size: 30px;
+}
+a {
+	text-decoration: none;
+}
+
+#menu li {
+	padding: 10px;
+}
+#social-links li {
+	padding: 10px;
+}
+.service-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.service-box {
+	border: 1px solid #eee;
+	flex-basis: 32%;
+	display: flex;
+	flex-direction: column;
+	max-width: 360px;
+	padding: 10px;
+	margin-bottom: 15px;
+}
+.service-box h2 {
+	margin: 5px 0px 10px;
+}
+.service-box p {
+	margin: 0 0 10px;
+}
+.service-box img {
+	width: 100%;
+}
+.main {
+	display: flex;
+}
+aside {
+	flex: 0 0 20vw;
+	background-color: rgb(139, 63, 9);
+	display: block;
+	margin-bottom: 15px;
+}
+aside ul {
+	list-style: none;
+	padding: 0;
+	color: white;
+}
+aside ul a {
+	display: block;
+	padding: 10px;
+	border-bottom: 1px solid gray;
+}
+footer {
+	background-color: rgb(165, 113, 111);
+	display: block;
+	padding: 10px;
+	text-align: center;
+	font-size: 25px;
+}
+article {
+	padding: 10px;
+}
+aside img {
+	width: 100%;
+}
+.btn {
+	align-self: flex-start;
+	margin-top: auto;
+}
+.btn a {
+	display: block;
+	background-color: gray;
+	border: 1px solid transparent;
+	padding: 8px 13px;
+	cursor: pointer;
+	font-size: large;
+	border-radius: 5px;
+}
+.btn a:hover {
+	background-color: transparent;
+	display: block;
+	border-radius: 2px solid gray;
+}
+@media screen and (max-width: 850px) {
+	.service-box {
+		flex-basis: 48%;
+	}
+	aside {
+		flex: 0 0 30vw;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	header {
+		flex-direction: column;
+		align-items: center;
+	}
+	#logo {
+		order: -1;
+	}
+	.main {
+		flex-direction: column;
+	}
+	article {
+		order: -1;
+	}
+	.service-container {
+		flex-direction: column;
+		align-items: center;
+	}
+	.service-box h2 {
+		text-align: center;
+	}
+	.our-service {
+		text-align: center;
+	}
+}
